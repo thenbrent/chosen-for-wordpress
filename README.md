@@ -2,12 +2,9 @@
 
 This plugin implements the [Chosen jQuery Plugin](http://harvesthq.github.com/chosen/) for WordPress.
 
-Chosen makes long, unwieldy select boxes much more user-friendly. 
+[Chosen](http://harvesthq.github.com/chosen/) makes long, unwieldy select boxes much more user-friendly. 
 
-This plugin applies to any select box in your content. It only loads the library is a post in question includes a select box. 
-
-
-### Examples
+This plugin applies Chosen to any select box in your post and page content. It only loads the Javascript if a post in question includes a select box. 
 
 
 ### Installation 
