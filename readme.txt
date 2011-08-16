@@ -14,11 +14,11 @@ This plugin implements the [Chosen jQuery Plugin](http://harvesthq.github.com/ch
 
 [Chosen](http://harvesthq.github.com/chosen/) makes long, unwieldy select boxes much more user-friendly. 
 
-This plugin applies Chosen to any select box in your post and page content. It only loads the Javascript if a post in question includes a select box or the form shortcode of a supported plugin. 
+This plugin applies Chosen to any select box in your post and page content. The relevant Javascript & CSS files are only loaded if the post in question includes a select box or a `[contact-form]` shortcode. 
 
-The [Grunion Contact Form](http://wordpress.org/extend/plugins/grunion-contact-form/) & [Contact Form 7](http://wordpress.org/extend/plugins/grunion-contact-form/) plugins are both supported. 
+The [Grunion Contact Form](http://wordpress.org/extend/plugins/grunion-contact-form/) & [Contact Form 7](http://wordpress.org/extend/plugins/grunion-contact-form/) plugins both use a the `[contact-form]` shortcode. 
 
-If you want need to force the Chosen script & styles to load on a page, simply include `[chosen]` within the page. 
+If you need to force the Chosen script & styles to load on a page, simply include `[chosen]` within the page. 
 
 
 == Installation ==
@@ -30,7 +30,7 @@ If you want need to force the Chosen script & styles to load on a page, simply i
 
 == Screenshots ==
 
-1. Simple Select Box made sleak with Chosen.
+1. Simple Select Box made sleek with Chosen.
 2. Multiple Select Box with groups.
 2. Multiple Select Box with groups.
 
