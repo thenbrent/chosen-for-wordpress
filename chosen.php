@@ -2,10 +2,11 @@
 /*
 Plugin Name: Chosen for WordPress
 Plugin URI: http://wordpress.org/extend/plugins/chosen/
-Description: Chosen makes long, unwieldy select boxes much more user-friendly.
+Description: Chosen makes long, unwieldy select boxes much more user-friendly. There are no settings. Chosen applies itself automatically.
 Author: Brent Shepherd
 Version: 0.1
 Author URI: http://find.brentshepherd.com
+License: GPLv2 or later
 */
 
 WP_Chosen::init();
