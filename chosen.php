@@ -43,7 +43,7 @@ class WP_Chosen {
 	 */
 	public static function maybe_enqueue_scripts() {
 
-		if( self::contains_select() ) {
+		if( self::contains_select() && ! is_admin() ) {
 			wp_enqueue_style(  'chosen', self::$chosen_url . '/chosen.css' );
 			wp_enqueue_script( 'chosen', self::$chosen_url . '/chosen.jquery.min.js', array( 'jquery' ), false, true );
 			wp_enqueue_script( 'wp-chosen', self::$wp_chosen_url . '/wp-chosen.js', array( 'chosen', 'jquery' ), false, true );
