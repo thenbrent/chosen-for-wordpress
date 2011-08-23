@@ -64,10 +64,10 @@ class WP_Chosen {
 		if( strpos( $content, '<select' ) !== false )
 			return true;
 		// Contains Grunion Contact Form
-		elseif( strpos( $content, '[contact-form' ) )
+		elseif( strpos( $content, '[contact-form' ) !== false )
 			return true;
 		// Brute force load
-		elseif( strpos( $content, '[chosen' ) )
+		elseif( strpos( $content, '[chosen' ) !== false )
 			return true;
 		else
 			return false;
