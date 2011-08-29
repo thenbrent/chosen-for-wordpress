@@ -3,7 +3,7 @@ Contributors: thenbrent
 Tags: jquery, select, chosen, contact form
 Requires at least: 3.1
 Tested up to: 3.2.1
-Stable tag: 0.1
+Stable tag: 0.2
 
 Make long, unwieldy select boxes much more user-friendly.
 
