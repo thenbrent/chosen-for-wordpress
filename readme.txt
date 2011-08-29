@@ -37,5 +37,14 @@ If you need to force the Chosen script & styles to load on a page, simply includ
 
 == Changelog ==
 
+= 0.2 =
+Chosen no longer being applied to Admin Select boxes by default.
+Improving shortcode parsing.
+
 = 0.1 =
 First version.
+
+== Upgrade Notice ==
+
+= 0.2 =
+Upgrade to prevent admin boxes being Chosenified.
