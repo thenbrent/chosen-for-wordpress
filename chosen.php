@@ -43,7 +43,7 @@ class WP_Chosen {
 	 */
 	public static function maybe_enqueue_scripts() {
 
-		if( self::contains_select() && ! is_admin() ) {
+		if ( self::contains_select() && ! is_admin() ) {
 			wp_enqueue_style(  'chosen', self::$chosen_url . '/chosen.css' );
 			wp_enqueue_script( 'chosen', self::$chosen_url . '/chosen.jquery.min.js', array( 'jquery' ), false, true );
 			wp_enqueue_script( 'wp-chosen', self::$wp_chosen_url . '/wp-chosen.js', array( 'chosen', 'jquery' ), false, true );
@@ -57,20 +57,20 @@ class WP_Chosen {
 	private static function contains_select( $content = '' ){
 		global $post;
 
-		if( empty( $content ) && is_object( $post ) )
+		if ( empty( $content ) && is_object( $post ) ) {
 			$content = $post->post_content;
+		}
 
 		// Contains a vanilla select element
-		if( strpos( $content, '<select' ) !== false )
+		if( strpos( $content, '<select' ) !== false ) {
 			return true;
-		// Contains Grunion Contact Form
-		elseif( strpos( $content, '[contact-form' ) !== false )
+		} elseif( strpos( $content, '[contact-form' ) !== false ) { // Contains Grunion Contact Form
 			return true;
-		// Brute force load
-		elseif( strpos( $content, '[chosen' ) !== false )
+		} elseif( strpos( $content, '[chosen' ) !== false ) { // Brute force load
 			return true;
-		else
+		} else {
 			return false;
+		}
 	}
 
 
