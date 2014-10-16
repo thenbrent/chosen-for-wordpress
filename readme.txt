@@ -3,7 +3,7 @@ Contributors: thenbrent
 Tags: jquery, select, chosen, contact form
 Requires at least: 3.1
 Tested up to: 3.2.1
-Stable tag: 0.2
+Stable tag: 0.3
 
 Make long, unwieldy select boxes much more user-friendly.
 
@@ -37,6 +37,9 @@ If you need to force the Chosen script & styles to load on a page, simply includ
 
 == Changelog ==
 
+= 0.3 =
+Update to latest version of Chosen JavaScript library
+
 = 0.2 =
 Chosen no longer being applied to Admin Select boxes by default.
 Improving shortcode parsing.
@@ -45,6 +48,9 @@ Improving shortcode parsing.
 First version.
 
 == Upgrade Notice ==
+
+= 0.3 =
+Update to use the latest version of the Chosen JavaScript library
 
 = 0.2 =
 Upgrade to prevent admin boxes being Chosenified.
